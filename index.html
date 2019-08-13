@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <title>Consulta Clima</title>
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <h1>Consulta Clima</h1>
+
+    <label for="city_moscu">
+        <input class="with-gap" type="radio" name="city" value="524901" id="city_moscu" checked />
+        <span>Moscú</span>
+    </label>
+    <label for="city_londres">
+        <input class="with-gap" type="radio" name="city" value="2643741" id="city_londres}" />
+        <span>Londres</span>
+    </label>
+    <label for="city_lisboa">
+        <input class="with-gap" type="radio" name="city" value="2267056" id="city_lisboa" />
+        <span>Lisboa</span>
+    </label>
+    <label for="city_cdmx">
+        <input class="with-gap" type="radio" name="city" value="3530597" id="city_cdmx" />
+        <span>Ciudad de México</span>
+    </label>
+    <label for="city_hongkong">
+        <input class="with-gap" type="radio" name="city" value="1819729" id="city_hongkong" />
+        <span>Hong Kong</span>
+    </label>
+    <label for="city_osaka">
+        <input class="with-gap" type="radio" name="city" value="1853909" id="city_osaka" />
+        <span>Osaka</span>
+    </label>
+    <label for="city_brasilia">
+        <input class="with-gap" type="radio" name="city" value="3469058" id="city_brasilia" />
+        <span>Brasilia</span>
+    </label>
+    <label for="city_praga">
+        <input class="with-gap" type="radio" name="city" value="3067696" id="city_praga" />
+        <span>Praga</span>
+    </label>
+    <button type="submit" id="search" value="submit" onclick="check_city()" class="btn">BUSCAR</button>
+
+    </form>
+    <h2 id="cityName">Nombre de ciudad</h2>
+   
+    Velocidad del Viento:<input type="text" id="wind"><br>
+    Coordinadas de la Ciudad: ( <input type="text" id="latitude" size="6">, <input type="text" id="longitud" size="6"> )
+
+    <div class="col s12">
+        Clima:
+        <div class="input-field inline">
+          <input id="clima" type="text" class="validate">
+        </div>
+      </div>
+      <div class="col s12">
+        Temperatura:
+        <div class="input-field inline">
+          <input id="degrees" type="text" class="validate">
+        </div>
+      </div>
+      <div class="col s12">
+        Velocidad del Viento:
+        <div class="input-field inline">
+          <input id="wind" type="text" class="validate">
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col l3">
+            Coordenadas de la Ciudad: (
+          <input  id="latitude" type="text" class="validate">
+        </div>
+        <div class="input-field col l3">
+            ,
+          <input id="longitud" type="text" class="validate">
+            )
+        </div>
+
+</body>
+
+
+
+</html>
