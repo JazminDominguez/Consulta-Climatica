@@ -15,8 +15,8 @@
 </head>
 
 <body>
-    <h1>Consulta Clima</h1>
-
+    <h2 class="blue-text text-darken-2">Consulta Clima   <i class="medium material-icons">wb_sunny</i></h2> 
+    <section class="teal lighten-5">
     <label for="city_moscu">
         <input class="with-gap" type="radio" name="city" value="524901" id="city_moscu" checked />
         <span>Moscú</span>
@@ -49,42 +49,43 @@
         <input class="with-gap" type="radio" name="city" value="3067696" id="city_praga" />
         <span>Praga</span>
     </label>
-    <button type="submit" id="search" value="submit" onclick="check_city()" class="btn">BUSCAR</button>
+    </section>
+    <div class="col s12">
+        <button type="submit" id="search" value="submit" onclick="check_city()" class="btn">BUSCAR</button>
+    </div>
 
-    </form>
-    <h2 id="cityName">Nombre de ciudad</h2>
-   
-    Velocidad del Viento:<input type="text" id="wind"><br>
-    Coordinadas de la Ciudad: ( <input type="text" id="latitude" size="6">, <input type="text" id="longitud" size="6"> )
+    <h3 id="cityName" class="orange-text text-darken-4">Nombre de ciudad</h3>
 
     <div class="col s12">
         Clima:
         <div class="input-field inline">
-          <input id="clima" type="text" class="validate">
+            <input id="clima" type="text" class="validate">
         </div>
-      </div>
-      <div class="col s12">
+    </div>
+    <div class="col s12">
         Temperatura:
         <div class="input-field inline">
-          <input id="degrees" type="text" class="validate">
+            <input id="degrees" type="text" class="validate">
         </div>
-      </div>
-      <div class="col s12">
+    </div>
+    <div class="col s12">
         Velocidad del Viento:
         <div class="input-field inline">
-          <input id="wind" type="text" class="validate">
+            <input id="wind" type="text" class="validate">
         </div>
-      </div>
-      <div class="row">
-        <div class="input-field col l3">
-            Coordenadas de la Ciudad: (
-          <input  id="latitude" type="text" class="validate">
+    </div>
+    <div class="row">
+        <div class="input-field col l2">
+            Coordenadas de la Ciudad:
         </div>
-        <div class="input-field col l3">
-            ,
-          <input id="longitud" type="text" class="validate">
-            )
+        <div class="input-field col l2">
+            (<input id="latitude" type="text" class="validate">
         </div>
+        <div class="input-field col l2">
+            ,<input id="longitud" type="text" class="validate">)
+
+        </div>
+    </div>
 
 </body>
 
